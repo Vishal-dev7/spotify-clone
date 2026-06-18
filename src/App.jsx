@@ -12,7 +12,7 @@ function App() {
 const[code,setCode]=useState(null);
   useEffect(()=>{
     const { code}=getTokenfromUrl();
-    console.log("token >>>>",_code);
+    console.log("token >>>>",code);
     if (code) setCode(code);
   },[])
 
