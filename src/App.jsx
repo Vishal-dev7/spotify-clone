@@ -6,14 +6,14 @@ import './App.css'
 import Login from './Login' 
 import { getTokenfromUrl } from './Spotify'
 
-const[code,setCode]=useState(null);
+
 function App() {
 
-
+const[code,setCode]=useState(null);
   useEffect(()=>{
-    const { _code}=getTokenfromUrl();
+    const { code}=getTokenfromUrl();
     console.log("token >>>>",_code);
-    if (_code) setCode(_code);
+    if (code) setCode(code);
   },[])
 
   return (
@@ -22,7 +22,7 @@ function App() {
         code ? <h1>logged in</h1>:<Login/>
       }
        
-       <Login/>
+       
             
     </>
   )

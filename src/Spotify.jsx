@@ -14,12 +14,12 @@ const redirecturi = 'https://spotify-clone-nu-weld-58.vercel.app/';
  export const getTokenfromUrl = () => {
   const params = new URLSearchParams(window.location.search);
 
-  const _code = params.get("code");
+  const code = params.get("code");
 
-  console.log(_code);
+  console.log(code);
 
-  return { _code };
-};
+  return { code };
+}
 //%20 for ascii and respomse_type=token is used to send as a string and get the access token in the url rytaaa
  //export const loginurl='${authEndpoint}?client_id=${clientId}&scope=${scopes.join("%20")}&response_type=token&show-dialog=true';
 export const loginurl=`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirecturi}&scope=${scopes.join("%20")}&response_type=code&show_dialog=true`;
