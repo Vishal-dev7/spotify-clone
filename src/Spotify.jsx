@@ -1,7 +1,7 @@
  export const authEndpoint = 'https://accounts.spotify.com/authorize';
  //const redirecturi=" https://handrail-bribe-unlucky.ngrok-free.dev ";
 //const redirecturi = 'https://127.0.0.1:5173/';
-const redirecturi = 'https://spotify-clone-lyart.vercel.app/';
+const redirecturi = 'https://spotify-clone-nu-weld-58.vercel.app/';
  const clientId="de4631e9b1a24f9b91faeea2c94bf51f";
  const scopes = [
 "user-read-currently-playing",
