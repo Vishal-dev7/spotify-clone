@@ -6,7 +6,7 @@ import './App.css'
 import Login from './Login' 
 import { getTokenfromUrl } from './Spotify'
 
-const[code,setCode]=usestate(null);
+const[code,setCode]=useState(null);
 function App() {
 
 
