@@ -9,7 +9,7 @@ const Login = () => {
       <img src={Logo} alt="Spotify Logo" />
 
       {/* button */}
-      <a href={loginurl} className='bg-green-500 rounded-lg  '>Login with Spotify</a>
+      <a href={loginurl} className='bg-green-500 rounded-3xl  font-semibold  '>Login with Spotify</a>
     </div>
   )
 }
