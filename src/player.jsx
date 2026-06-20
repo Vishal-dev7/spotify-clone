@@ -3,7 +3,7 @@ import React from 'react'
 const player = () => {
   return (
     <div>
-      hello
+      <h1>logged in page</h1>
     </div>
   )
 }
