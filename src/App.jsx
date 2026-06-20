@@ -32,10 +32,9 @@ console.log(spotify?.setAccessToken);
 
   return (
     <>
-    <Player/>
-      {/* {
-        code ? <h1>logged in</h1>:<Login/>
-      } */}
+      {
+        code ? <Player/>:<Login/>
+      }
        
        
             
