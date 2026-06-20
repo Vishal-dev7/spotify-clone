@@ -23,8 +23,9 @@ const[code,setCode]=useState(null);
         // {
         //   console.log('➡️',user);
         // })
-        console.log("Code:", code);
-console.log("Spotify:", spotify);
+        console.log(spotify);
+console.log(typeof spotify);
+console.log(spotify?.setAccessToken);
       }
   },[])
 
