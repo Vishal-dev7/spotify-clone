@@ -18,11 +18,13 @@ const[code,setCode]=useState(null);
     if (code)
       { 
         setCode(code);
-        spotify.setAccessToken(code);
-        spotify.getMe(code).then((user)=>
-        {
-          console.log('➡️',user);
-        })
+        // spotify.setAccessToken(code);
+        // spotify.getMe(code).then((user)=>
+        // {
+        //   console.log('➡️',user);
+        // })
+        console.log("Code:", code);
+console.log("Spotify:", spotify);
       }
   },[])
 
