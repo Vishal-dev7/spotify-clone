@@ -6,6 +6,7 @@ import './App.css'
 import Login from './Login' 
 import { getTokenfromUrl } from './Spotify'
 import SpotifyWebApi from 'spotify-web-api-js'
+import Player from './Player'
 
 const spotify =new SpotifyWebApi();
 
@@ -31,9 +32,10 @@ console.log(spotify?.setAccessToken);
 
   return (
     <>
-      {
+    <Player/>
+      {/* {
         code ? <h1>logged in</h1>:<Login/>
-      }
+      } */}
        
        
             
