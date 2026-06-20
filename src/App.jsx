@@ -7,7 +7,7 @@ import Login from './Login'
 import { getTokenfromUrl } from './Spotify'
 import SpotifyWebApi from 'spotify-web-api-js'
 
-spotify sp=new SpotifyWebApi();
+const spotify =new SpotifyWebApi();
 
 function App() {
 
