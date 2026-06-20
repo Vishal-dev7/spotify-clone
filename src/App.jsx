@@ -5,7 +5,9 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Login from './Login' 
 import { getTokenfromUrl } from './Spotify'
+import SpotifyWebApi from 'spotify-web-api-js'
 
+spotify sp=new SpotifyWebApi();
 
 function App() {
 
@@ -13,7 +15,15 @@ const[code,setCode]=useState(null);
   useEffect(()=>{
     const { code}=getTokenfromUrl();
     console.log("token >>>>",code);
-    if (code) setCode(code);
+    if (code)
+      { 
+        setCode(code);
+        spotify.setAccesstoken(code);
+        spotify.getmy().then((user)=>
+        {
+          console.log('➡️',user);
+        })
+      }
   },[])
 
   return (
