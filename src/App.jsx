@@ -19,7 +19,7 @@ const[code,setCode]=useState(null);
       { 
         setCode(code);
         spotify.setAccessToken(code);
-        spotify.getMe().then((user)=>
+        spotify.getMe(code).then((user)=>
         {
           console.log('➡️',user);
         })
