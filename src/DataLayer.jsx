@@ -8,4 +8,4 @@ export const DataLayer=({initialState,reducer,children}) => (
         </DataLayerContext.Provider>
 )
 
-export const DataLayerValue = ()=>useContext(DataLayerContext); 
+export const DataLayerValue = () => useContext(DataLayerContext);
