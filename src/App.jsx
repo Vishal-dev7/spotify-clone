@@ -7,12 +7,14 @@ import Login from './Login'
 import { getTokenfromUrl } from './Spotify'
 import SpotifyWebApi from 'spotify-web-api-js'
 import Player from './Player'
+import { DataLayerValue } from './Datalayer'
 
 const spotify =new SpotifyWebApi();
 
 function App() {
 
 const[code,setCode]=useState(null);
+const[{},dispatch]=DataLayerValue();
   useEffect(()=>{
     const { code}=getTokenfromUrl();
     console.log("token >>>>",code);
@@ -24,6 +26,9 @@ const[code,setCode]=useState(null);
         // {
         //   console.log('➡️',user);
         // })
+        spotify.getMe().then(user => {
+  console.log('➡️',user);
+});
         console.log(spotify);
 console.log(typeof spotify);
 console.log(spotify?.setAccessToken);
