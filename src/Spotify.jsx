@@ -28,5 +28,5 @@ const scopes = [
 }
 //%20 for ascii and respomse_type=token is used to send as a string and get the access token in the url rytaaa
  //export const loginurl='${authEndpoint}?client_id=${clientId}&scope=${scopes.join("%20")}&response_type=token&show-dialog=true';
-export const loginurl=`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirecturi}&scope=${scopes.join("%20")}&response_type=code&show_dialog=true`;
- console.log(loginurl);
+export const loginUrl=`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirecturi}&scope=${scopes.join("%20")}&response_type=code&show_dialog=true`;
+ console.log(loginUrl);
